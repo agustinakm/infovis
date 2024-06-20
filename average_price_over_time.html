@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.17.0"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-d7c0ae31399f384d9e2757b3fe5e5cb8"}, "mark": {"type": "line"}, "encoding": {"x": {"field": "year_month", "type": "temporal"}, "y": {"field": "price", "type": "quantitative"}}, "height": 400, "title": "Average Price Over Time", "width": 800, "$schema": "https://vega.github.io/schema/vega-lite/v5.17.0.json", "datasets": {"data-d7c0ae31399f384d9e2757b3fe5e5cb8": [{"year_month": "2015-12-01T00:00:00", "price": 180.0}, {"year_month": "2016-09-01T00:00:00", "price": 94.0}, {"year_month": "2017-11-01T00:00:00", "price": 80.0}, {"year_month": "2018-06-01T00:00:00", "price": 160.0}, {"year_month": "2018-07-01T00:00:00", "price": 140.5}, {"year_month": "2018-08-01T00:00:00", "price": 210.0}, {"year_month": "2018-09-01T00:00:00", "price": 62.0}, {"year_month": "2018-10-01T00:00:00", "price": 58.0}, {"year_month": "2018-11-01T00:00:00", "price": 158.0}, {"year_month": "2018-12-01T00:00:00", "price": 46.0}, {"year_month": "2019-03-01T00:00:00", "price": 60.0}, {"year_month": "2019-06-01T00:00:00", "price": 126.0}, {"year_month": "2019-07-01T00:00:00", "price": 450.0}, {"year_month": "2019-08-01T00:00:00", "price": 420.0}, {"year_month": "2019-09-01T00:00:00", "price": 244.0}, {"year_month": "2019-10-01T00:00:00", "price": 111.4}, {"year_month": "2019-11-01T00:00:00", "price": 161.5}, {"year_month": "2019-12-01T00:00:00", "price": 115.0}, {"year_month": "2020-01-01T00:00:00", "price": 401.0}, {"year_month": "2020-02-01T00:00:00", "price": 105.66666666666667}, {"year_month": "2020-03-01T00:00:00", "price": 123.0}, {"year_month": "2020-04-01T00:00:00", "price": 390.0}, {"year_month": "2020-05-01T00:00:00", "price": 213.0}, {"year_month": "2020-07-01T00:00:00", "price": 300.0}, {"year_month": "2020-08-01T00:00:00", "price": 71.5}, {"year_month": "2020-10-01T00:00:00", "price": 57.5}, {"year_month": "2020-11-01T00:00:00", "price": 99.25}, {"year_month": "2020-12-01T00:00:00", "price": 442.0}, {"year_month": "2021-01-01T00:00:00", "price": 218.0}, {"year_month": "2021-02-01T00:00:00", "price": 155.0}, {"year_month": "2021-03-01T00:00:00", "price": 150.75}, {"year_month": "2021-04-01T00:00:00", "price": 69.25}, {"year_month": "2021-05-01T00:00:00", "price": 217.6}, {"year_month": "2021-06-01T00:00:00", "price": 39.25}, {"year_month": "2021-07-01T00:00:00", "price": 105.66666666666667}, {"year_month": "2021-08-01T00:00:00", "price": 150.63636363636363}, {"year_month": "2021-09-01T00:00:00", "price": 115.94117647058823}, {"year_month": "2021-10-01T00:00:00", "price": 160.61111111111111}, {"year_month": "2021-11-01T00:00:00", "price": 143.28571428571428}, {"year_month": "2021-12-01T00:00:00", "price": 165.0}, {"year_month": "2022-01-01T00:00:00", "price": 139.71428571428572}, {"year_month": "2022-02-01T00:00:00", "price": 111.25}, {"year_month": "2022-03-01T00:00:00", "price": 158.77777777777777}, {"year_month": "2022-04-01T00:00:00", "price": 119.66666666666667}, {"year_month": "2022-05-01T00:00:00", "price": 209.875}, {"year_month": "2022-06-01T00:00:00", "price": 152.52380952380952}, {"year_month": "2022-07-01T00:00:00", "price": 196.4375}, {"year_month": "2022-08-01T00:00:00", "price": 150.36363636363637}, {"year_month": "2022-09-01T00:00:00", "price": 165.47222222222223}, {"year_month": "2022-10-01T00:00:00", "price": 152.2325581395349}, {"year_month": "2022-11-01T00:00:00", "price": 121.04545454545455}, {"year_month": "2022-12-01T00:00:00", "price": 133.66666666666666}, {"year_month": "2023-01-01T00:00:00", "price": 181.0}, {"year_month": "2023-02-01T00:00:00", "price": 165.4375}, {"year_month": "2023-03-01T00:00:00", "price": 125.65}, {"year_month": "2023-04-01T00:00:00", "price": 137.19230769230768}, {"year_month": "2023-05-01T00:00:00", "price": 134.02857142857144}, {"year_month": "2023-06-01T00:00:00", "price": 183.31884057971016}, {"year_month": "2023-07-01T00:00:00", "price": 149.74285714285713}, {"year_month": "2023-08-01T00:00:00", "price": 159.29651162790697}, {"year_month": "2023-09-01T00:00:00", "price": 134.944}, {"year_month": "2023-10-01T00:00:00", "price": 152.76824034334763}, {"year_month": "2023-11-01T00:00:00", "price": 156.1355421686747}, {"year_month": "2023-12-01T00:00:00", "price": 160.6657060518732}, {"year_month": "2024-01-01T00:00:00", "price": 133.73788546255506}, {"year_month": "2024-02-01T00:00:00", "price": 135.42547770700637}, {"year_month": "2024-03-01T00:00:00", "price": 151.69250535331906}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
